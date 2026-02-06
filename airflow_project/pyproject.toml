@@ -1,0 +1,19 @@
+[project]
+name = "airflow-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "charre2021",email = "charre2021@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pendulum (>=3.2.0,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "airflow_project", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
